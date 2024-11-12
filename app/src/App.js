@@ -24,6 +24,11 @@ function App() {
 		setShowFavorites((prevShowFavorites) => !prevShowFavorites);
 	};
 
+	function handleMoreInfo(id) {
+		const comic = data.find((comic) => comic.id === id);
+		console.log(comic);
+	}
+
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
@@ -61,6 +66,7 @@ function App() {
 						<Card
 							key={comic.id}
 							comic={comic}
+							handleMoreInfo={() => handleMoreInfo(comic.id)}
 							isFavorite={favorites.includes(comic.id)}
 							toggleFavorite={() => toggleFavorite(comic.id)}
 						/>
