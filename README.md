@@ -22,7 +22,7 @@ Esta aplicación muestra cómics de Marvel, permitiendo a los usuarios explorar 
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/tu_usuario/marvel-comics-display.git
-   cd marvel-comics-display
+   cd app
    ```
    
 2. Instala las dependencias:
